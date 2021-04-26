@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--All Countries View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="AllCountriesViewController" customModule="CellcomTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GTT-3h-aOX">
+                                <rect key="frame" x="0.0" y="164" width="414" height="698"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="VZ3-ze-VIn"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="oeY-o2-Haz"/>
+                                </connections>
+                            </tableView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="EjF-qo-4g0">
+                                <rect key="frame" x="260" y="65" width="134" height="78"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MII-MS-wXP">
+                                        <rect key="frame" x="0.0" y="0.0" width="134" height="30"/>
+                                        <state key="normal" title="מיון לפי שם בסדר עולה"/>
+                                        <connections>
+                                            <action selector="ArrangeByNameInAscendingOrder" destination="BYZ-38-t0r" eventType="touchUpInside" id="PQF-wN-bKm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XIx-0L-lwn">
+                                        <rect key="frame" x="0.0" y="48" width="134" height="30"/>
+                                        <state key="normal" title="מיון לפי שם בסדר יורד"/>
+                                        <connections>
+                                            <action selector="ArrangeByNameInDescendingOrder" destination="BYZ-38-t0r" eventType="touchUpInside" id="7fm-gf-dBu"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="odg-o5-cmQ">
+                                <rect key="frame" x="20" y="65" width="187" height="78"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5up-Yw-BDB">
+                                        <rect key="frame" x="0.0" y="0.0" width="187" height="30"/>
+                                        <state key="normal" title="מיון לפי גודל המדינה בסדר עולה"/>
+                                        <connections>
+                                            <action selector="ArrangeByAreaInAscendingOrder" destination="BYZ-38-t0r" eventType="touchUpInside" id="fjj-fI-uA4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RWq-ii-laI">
+                                        <rect key="frame" x="0.0" y="48" width="187" height="30"/>
+                                        <state key="normal" title="מיון לפי גודל המדינה בסדר יורד"/>
+                                        <connections>
+                                            <action selector="ArrangeByAreaInDescendingOrder" destination="BYZ-38-t0r" eventType="touchUpInside" id="PL1-tL-MyL"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GTT-3h-aOX" firstAttribute="top" secondItem="odg-o5-cmQ" secondAttribute="bottom" constant="21" id="6Nh-W9-sa9"/>
+                            <constraint firstItem="odg-o5-cmQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9eK-Gb-GqY"/>
+                            <constraint firstItem="EjF-qo-4g0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="21" id="F3k-Um-dTT"/>
+                            <constraint firstItem="GTT-3h-aOX" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="KDT-sR-bPu"/>
+                            <constraint firstItem="odg-o5-cmQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="21" id="KtZ-ui-UEp"/>
+                            <constraint firstItem="GTT-3h-aOX" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Xfa-fj-1W4"/>
+                            <constraint firstItem="GTT-3h-aOX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aDl-QT-ULF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EjF-qo-4g0" secondAttribute="trailing" constant="20" id="n9Q-Q4-P7Q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="GTT-3h-aOX" id="V1P-as-CMp"/>
+                        <segue destination="vZY-Kc-gj2" kind="show" identifier="ShowBorderingCountriesSegue" id="ZLn-Vf-zKW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-122" y="-77"/>
+        </scene>
+        <!--Bordering Countries View Controller-->
+        <scene sceneID="bp3-r4-h8V">
+            <objects>
+                <viewController id="vZY-Kc-gj2" customClass="BorderingCountriesViewController" customModule="CellcomTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WxP-aU-39h">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0VE-CH-uJ9">
+                                <rect key="frame" x="0.0" y="21" width="414" height="787"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="vZY-Kc-gj2" id="Dj4-yJ-7SE"/>
+                                    <outlet property="delegate" destination="vZY-Kc-gj2" id="ohq-a5-ucN"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="לא קיימות מדינות גובלות" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Wbt-Hp-zyE">
+                                <rect key="frame" x="0.0" y="399" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Mmv-el-AJg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0VE-CH-uJ9" firstAttribute="trailing" secondItem="Mmv-el-AJg" secondAttribute="trailing" id="TFZ-fi-1Fl"/>
+                            <constraint firstItem="0VE-CH-uJ9" firstAttribute="top" secondItem="Mmv-el-AJg" secondAttribute="top" constant="21" id="dQV-td-aLr"/>
+                            <constraint firstItem="0VE-CH-uJ9" firstAttribute="leading" secondItem="Mmv-el-AJg" secondAttribute="leading" id="grs-ta-eiU"/>
+                            <constraint firstItem="0VE-CH-uJ9" firstAttribute="bottom" secondItem="Mmv-el-AJg" secondAttribute="bottom" id="tkZ-ZF-drv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Qz0-fw-YnB"/>
+                    <connections>
+                        <outlet property="lblNoItems" destination="Wbt-Hp-zyE" id="aS0-P5-bVV"/>
+                        <outlet property="tableView" destination="0VE-CH-uJ9" id="TgU-ga-e3O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DVJ-HQ-wKk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="608.69565217391312" y="-77.008928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

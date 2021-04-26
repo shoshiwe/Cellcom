@@ -1,0 +1,6 @@
+framework module Pods_CellcomTestTests {
+  umbrella header "Pods-CellcomTestTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

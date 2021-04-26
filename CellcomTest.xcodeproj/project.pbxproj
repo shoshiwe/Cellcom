@@ -3,13 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05B765AAA3674478635CEAFB /* Pods_CellcomTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42963030B81CE1918C9E0C6D /* Pods_CellcomTest.framework */; };
+		263EB5D69845EB607A884CFA /* Pods_CellcomTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0C9F54A2E1E347C7B66DFC /* Pods_CellcomTestTests.framework */; };
+		8A101CA3FACF682527610DEE /* Pods_CellcomTest_CellcomTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE4ECCC82895FDFB787D713D /* Pods_CellcomTest_CellcomTestUITests.framework */; };
+		B448360726373D85006E8423 /* AllCountriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B448360626373D85006E8423 /* AllCountriesViewController.swift */; };
+		B448361226373E44006E8423 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = B448361126373E44006E8423 /* Country.swift */; };
+		B448361A2637425A006E8423 /* RestCountriesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44836192637425A006E8423 /* RestCountriesManager.swift */; };
+		B44836212637514B006E8423 /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B448361F2637514B006E8423 /* CountryTableViewCell.swift */; };
+		B44836222637514B006E8423 /* CountryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B44836202637514B006E8423 /* CountryTableViewCell.xib */; };
+		B448362D26375E1E006E8423 /* BorderingCountriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B448362C26375E1E006E8423 /* BorderingCountriesViewController.swift */; };
 		B4F0E88F26373B12002C7E15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F0E88E26373B12002C7E15 /* AppDelegate.swift */; };
 		B4F0E89126373B12002C7E15 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F0E89026373B12002C7E15 /* SceneDelegate.swift */; };
-		B4F0E89326373B12002C7E15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F0E89226373B12002C7E15 /* ViewController.swift */; };
 		B4F0E89626373B12002C7E15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4F0E89426373B12002C7E15 /* Main.storyboard */; };
 		B4F0E89926373B12002C7E15 /* CellcomTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B4F0E89726373B12002C7E15 /* CellcomTest.xcdatamodeld */; };
 		B4F0E89B26373B14002C7E15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4F0E89A26373B14002C7E15 /* Assets.xcassets */; };
@@ -36,10 +44,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A0C9F54A2E1E347C7B66DFC /* Pods_CellcomTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CellcomTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		235043CA0F4366CC362D2408 /* Pods-CellcomTest-CellcomTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CellcomTest-CellcomTestUITests.debug.xcconfig"; path = "Target Support Files/Pods-CellcomTest-CellcomTestUITests/Pods-CellcomTest-CellcomTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		40BE960A5EA91E20E8D58819 /* Pods-CellcomTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CellcomTestTests.release.xcconfig"; path = "Target Support Files/Pods-CellcomTestTests/Pods-CellcomTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		42963030B81CE1918C9E0C6D /* Pods_CellcomTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CellcomTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46937C9E343B090D7A53D7BE /* Pods-CellcomTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CellcomTestTests.debug.xcconfig"; path = "Target Support Files/Pods-CellcomTestTests/Pods-CellcomTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		693FA2BB5D4BE5FED60B8E8D /* Pods-CellcomTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CellcomTest.debug.xcconfig"; path = "Target Support Files/Pods-CellcomTest/Pods-CellcomTest.debug.xcconfig"; sourceTree = "<group>"; };
+		6968E8BF86C420D2FDEF5875 /* Pods-CellcomTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CellcomTest.release.xcconfig"; path = "Target Support Files/Pods-CellcomTest/Pods-CellcomTest.release.xcconfig"; sourceTree = "<group>"; };
+		AE4ECCC82895FDFB787D713D /* Pods_CellcomTest_CellcomTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CellcomTest_CellcomTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B448360626373D85006E8423 /* AllCountriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCountriesViewController.swift; sourceTree = "<group>"; };
+		B448361126373E44006E8423 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		B44836192637425A006E8423 /* RestCountriesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestCountriesManager.swift; sourceTree = "<group>"; };
+		B448361F2637514B006E8423 /* CountryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewCell.swift; sourceTree = "<group>"; };
+		B44836202637514B006E8423 /* CountryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryTableViewCell.xib; sourceTree = "<group>"; };
+		B448362C26375E1E006E8423 /* BorderingCountriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderingCountriesViewController.swift; sourceTree = "<group>"; };
 		B4F0E88B26373B12002C7E15 /* CellcomTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CellcomTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4F0E88E26373B12002C7E15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4F0E89026373B12002C7E15 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B4F0E89226373B12002C7E15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B4F0E89526373B12002C7E15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B4F0E89826373B12002C7E15 /* CellcomTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CellcomTest.xcdatamodel; sourceTree = "<group>"; };
 		B4F0E89A26373B14002C7E15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +72,7 @@
 		B4F0E8AF26373B14002C7E15 /* CellcomTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CellcomTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4F0E8B326373B14002C7E15 /* CellcomTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellcomTestUITests.swift; sourceTree = "<group>"; };
 		B4F0E8B526373B14002C7E15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE6C52BC55E08B24F3497E07 /* Pods-CellcomTest-CellcomTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CellcomTest-CellcomTestUITests.release.xcconfig"; path = "Target Support Files/Pods-CellcomTest-CellcomTestUITests/Pods-CellcomTest-CellcomTestUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05B765AAA3674478635CEAFB /* Pods_CellcomTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				263EB5D69845EB607A884CFA /* Pods_CellcomTestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +96,71 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A101CA3FACF682527610DEE /* Pods_CellcomTest_CellcomTestUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D1DCCBE49900049289CC972 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				693FA2BB5D4BE5FED60B8E8D /* Pods-CellcomTest.debug.xcconfig */,
+				6968E8BF86C420D2FDEF5875 /* Pods-CellcomTest.release.xcconfig */,
+				235043CA0F4366CC362D2408 /* Pods-CellcomTest-CellcomTestUITests.debug.xcconfig */,
+				DE6C52BC55E08B24F3497E07 /* Pods-CellcomTest-CellcomTestUITests.release.xcconfig */,
+				46937C9E343B090D7A53D7BE /* Pods-CellcomTestTests.debug.xcconfig */,
+				40BE960A5EA91E20E8D58819 /* Pods-CellcomTestTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B448360526373D18006E8423 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B448360626373D85006E8423 /* AllCountriesViewController.swift */,
+				B448362C26375E1E006E8423 /* BorderingCountriesViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B448360E26373DA6006E8423 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B448361E26375110006E8423 /* Cells */,
+				B4F0E89C26373B14002C7E15 /* LaunchScreen.storyboard */,
+				B4F0E89426373B12002C7E15 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B448360F26373DC2006E8423 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B448361026373DD1006E8423 /* Objects */,
+				B44836192637425A006E8423 /* RestCountriesManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B448361026373DD1006E8423 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				B448361126373E44006E8423 /* Country.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		B448361E26375110006E8423 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B448361F2637514B006E8423 /* CountryTableViewCell.swift */,
+				B44836202637514B006E8423 /* CountryTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		B4F0E88226373B12002C7E15 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +168,8 @@
 				B4F0E8A726373B14002C7E15 /* CellcomTestTests */,
 				B4F0E8B226373B14002C7E15 /* CellcomTestUITests */,
 				B4F0E88C26373B12002C7E15 /* Products */,
+				3D1DCCBE49900049289CC972 /* Pods */,
+				E6B2DE00B6C70181AC99A065 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,12 +186,12 @@
 		B4F0E88D26373B12002C7E15 /* CellcomTest */ = {
 			isa = PBXGroup;
 			children = (
+				B448360F26373DC2006E8423 /* Model */,
+				B448360E26373DA6006E8423 /* Views */,
+				B448360526373D18006E8423 /* Controllers */,
 				B4F0E88E26373B12002C7E15 /* AppDelegate.swift */,
 				B4F0E89026373B12002C7E15 /* SceneDelegate.swift */,
-				B4F0E89226373B12002C7E15 /* ViewController.swift */,
-				B4F0E89426373B12002C7E15 /* Main.storyboard */,
 				B4F0E89A26373B14002C7E15 /* Assets.xcassets */,
-				B4F0E89C26373B14002C7E15 /* LaunchScreen.storyboard */,
 				B4F0E89F26373B14002C7E15 /* Info.plist */,
 				B4F0E89726373B12002C7E15 /* CellcomTest.xcdatamodeld */,
 			);
@@ -131,6 +216,16 @@
 			path = CellcomTestUITests;
 			sourceTree = "<group>";
 		};
+		E6B2DE00B6C70181AC99A065 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42963030B81CE1918C9E0C6D /* Pods_CellcomTest.framework */,
+				AE4ECCC82895FDFB787D713D /* Pods_CellcomTest_CellcomTestUITests.framework */,
+				1A0C9F54A2E1E347C7B66DFC /* Pods_CellcomTestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +233,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B4F0E8B826373B14002C7E15 /* Build configuration list for PBXNativeTarget "CellcomTest" */;
 			buildPhases = (
+				F52A1DED78783DA53CF8170C /* [CP] Check Pods Manifest.lock */,
 				B4F0E88726373B12002C7E15 /* Sources */,
 				B4F0E88826373B12002C7E15 /* Frameworks */,
 				B4F0E88926373B12002C7E15 /* Resources */,
+				1D6117B3B0A1EC46DF6B4B9F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,6 +252,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B4F0E8BB26373B14002C7E15 /* Build configuration list for PBXNativeTarget "CellcomTestTests" */;
 			buildPhases = (
+				C636042EBE29EA237046E471 /* [CP] Check Pods Manifest.lock */,
 				B4F0E8A026373B14002C7E15 /* Sources */,
 				B4F0E8A126373B14002C7E15 /* Frameworks */,
 				B4F0E8A226373B14002C7E15 /* Resources */,
@@ -173,9 +271,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B4F0E8BE26373B14002C7E15 /* Build configuration list for PBXNativeTarget "CellcomTestUITests" */;
 			buildPhases = (
+				84B7964EBD81877952F3740D /* [CP] Check Pods Manifest.lock */,
 				B4F0E8AB26373B14002C7E15 /* Sources */,
 				B4F0E8AC26373B14002C7E15 /* Frameworks */,
 				B4F0E8AD26373B14002C7E15 /* Resources */,
+				F1C98EE16A7334835BF0BC32 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,6 +334,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B44836222637514B006E8423 /* CountryTableViewCell.xib in Resources */,
 				B4F0E89E26373B14002C7E15 /* LaunchScreen.storyboard in Resources */,
 				B4F0E89B26373B14002C7E15 /* Assets.xcassets in Resources */,
 				B4F0E89626373B12002C7E15 /* Main.storyboard in Resources */,
@@ -256,14 +357,121 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1D6117B3B0A1EC46DF6B4B9F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CellcomTest/Pods-CellcomTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CellcomTest/Pods-CellcomTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CellcomTest/Pods-CellcomTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84B7964EBD81877952F3740D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CellcomTest-CellcomTestUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C636042EBE29EA237046E471 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CellcomTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1C98EE16A7334835BF0BC32 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CellcomTest-CellcomTestUITests/Pods-CellcomTest-CellcomTestUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CellcomTest-CellcomTestUITests/Pods-CellcomTest-CellcomTestUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CellcomTest-CellcomTestUITests/Pods-CellcomTest-CellcomTestUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F52A1DED78783DA53CF8170C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CellcomTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B4F0E88726373B12002C7E15 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4F0E89326373B12002C7E15 /* ViewController.swift in Sources */,
+				B448362D26375E1E006E8423 /* BorderingCountriesViewController.swift in Sources */,
+				B448360726373D85006E8423 /* AllCountriesViewController.swift in Sources */,
 				B4F0E88F26373B12002C7E15 /* AppDelegate.swift in Sources */,
 				B4F0E89126373B12002C7E15 /* SceneDelegate.swift in Sources */,
+				B44836212637514B006E8423 /* CountryTableViewCell.swift in Sources */,
+				B448361A2637425A006E8423 /* RestCountriesManager.swift in Sources */,
+				B448361226373E44006E8423 /* Country.swift in Sources */,
 				B4F0E89926373B12002C7E15 /* CellcomTest.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,6 +645,7 @@
 		};
 		B4F0E8B926373B14002C7E15 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 693FA2BB5D4BE5FED60B8E8D /* Pods-CellcomTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -456,6 +665,7 @@
 		};
 		B4F0E8BA26373B14002C7E15 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6968E8BF86C420D2FDEF5875 /* Pods-CellcomTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -475,6 +685,7 @@
 		};
 		B4F0E8BC26373B14002C7E15 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46937C9E343B090D7A53D7BE /* Pods-CellcomTestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -497,6 +708,7 @@
 		};
 		B4F0E8BD26373B14002C7E15 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40BE960A5EA91E20E8D58819 /* Pods-CellcomTestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -519,6 +731,7 @@
 		};
 		B4F0E8BF26373B14002C7E15 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 235043CA0F4366CC362D2408 /* Pods-CellcomTest-CellcomTestUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -539,6 +752,7 @@
 		};
 		B4F0E8C026373B14002C7E15 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE6C52BC55E08B24F3497E07 /* Pods-CellcomTest-CellcomTestUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
